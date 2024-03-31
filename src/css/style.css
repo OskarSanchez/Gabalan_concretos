@@ -1,0 +1,773 @@
+/* Estilo de la letra */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* General modifica todo el HTML*/
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', 'sans-serif';
+	font-weight: 400;
+	color: #000000;
+	scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 2.5rem;
+	color: #eaeaff;
+}
+
+h2 {
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-size: 1.7rem;
+	text-align: justify;
+}
+
+.restaurar {
+	clear: both;
+}
+
+div.contenido {
+	width: auto;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div hr {
+	margin-left: 200px;
+	margin-top:15px ;
+	height: 3px;
+	width: 74%;
+	background-color: #eaeaff;
+}
+#info {
+	display: none;
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+/* Usar el 100% de la pantalla*/
+html,
+body{
+	height: 100%;
+	background: #eaeaff;
+}
+
+
+/* Menu superior cabecera */
+
+/* Navegacion */
+
+nav {
+	padding: 0.8rem 0;
+	border-top: 10px;
+}
+/* Menu de navegacion */
+
+div.cont-menu {
+	display: flex;
+	align-items: center;
+}
+
+/* logo de empresa - navegacion */
+
+div.menu_empresa {
+	width: 85%;
+	display:flex;
+	align-items: center;
+}
+div.logo-nombre {
+    width: 56%;
+    display: flex;
+    align-items: center;
+}
+div.menu_empresa a.logo {
+	margin: 0 0 0 5%;
+}
+div.menu_empresa img {
+	width: 70%;
+    margin: 0 10px 0 10px;
+}
+
+ul.menu {
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
+.nav-link {
+	margin: 0 10px;
+	padding: 0;
+	width: 60%;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #eaeaff;
+
+}
+/* Elimina puntos o viñetas de las listas*/
+nav ul li {
+	list-style-type: none;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/* Menu interativo hasta movil */
+
+.dropdown__list:has( :checked ){
+    --rows: 1fr;
+	
+}
+
+.dropdown__check{
+    position: absolute;
+    width: 8rem;
+    height: 3%;
+    opacity: 0;
+    cursor: pointer;
+	
+}
+
+.dropdown__arrow{
+    margin-left: auto;
+    transform: var(--rotate, 0);
+    transition: .2s transform;
+}
+
+.dropdown__content{
+	width: 40%;
+	display: grid;
+    grid-template-rows: var(--rows, 0fr);
+    transition: .2s grid-template-rows;
+	position: absolute;
+	transform: translate(-79px, 0px);
+}
+
+.dropdown__sub{
+    overflow: hidden;
+	display: flex;
+
+}
+
+.dropdown__li{
+	padding: 5px 0;
+    list-style: none;
+    
+}
+.dropdown__anchor{
+	margin: 0 5px;
+    display:inline;
+    color:#eaeaff;
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/* Iconos redes social */
+
+div.red-social {
+	width: 14%;
+}
+ul.menu-social {
+	margin: 0 0 0 0;
+	display: flex;
+}
+.nav-item-social {
+	padding: 0 5px;
+}
+.nav-item-social a img {
+	width: 35px;
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Seccion Cabecera */
+section.cabecera {
+	background: #3254ff;
+	border-top: solid #eaeaff 15px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Seccion del carrousel empresa */
+section.carrousel {
+	width: auto;
+}
+
+div.carousel_dos{
+	display: flex;
+}
+div.carouselslide {
+	width: 65%;
+}
+div.nomEmpresa video {
+	width: 100%;
+	height: 465px;
+	object-fit: fill;
+}
+
+aside {
+	width: 35%;
+	margin-left: 5px;
+}
+div.tarjetas {
+	display: grid
+}
+div.tarjetas img {
+	padding: 5px 10px 5px 0px;
+	width: 100%;
+	height: 160px;
+	border-radius: 10px;
+}
+div.tarjetaquieneSomos,
+div.tarjetaProductos,
+div.tarjetaServicios {
+	margin-left: 5px;
+	transition: all .2s;
+}
+div.tarjetas h3 {
+	padding-left: 14%;
+	font-weight: 700;
+	position: absolute;
+	color: #3254ff;
+}
+div.tarjetaquieneSomos h3 {
+	padding-left: 11%;
+}
+
+div.tarjetaquieneSomos:hover,
+div.tarjetaProductos:hover,
+div.tarjetaServicios:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 0px 5px 0px #eaeaff;
+}
+
+
+/* Mensaje Galeria de Imagees */
+div.span-gallery {
+	width: 100%;
+    height: 131px;
+	display: flex;
+	flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: #3254ff;
+}
+div span.spanGallery {
+	margin-left: 200px;
+}
+div span h2 {
+    font-weight: 700;
+	color: #eaeaff;
+}
+div.span hr {
+	margin-left: 200px;
+	margin-top:15px ;
+	height: 3px;
+	width: 74%;
+	background-color: #eaeaff;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/* Seccion Gallery carrousel */
+
+section.carrouselGallery {
+	height: 30rem;
+	display: flex;
+	justify-content: center;
+}
+div.contenidoGaleria {
+	display: grid;
+    justify-items: center;
+}
+div h3.txt_gallery{
+	margin-bottom: 1rem;
+	color: #3254ff;
+}
+
+.carousel-item {
+	/* transition: none; */
+	transition: transform .65s ease-in-out;
+}
+div.galeria {
+	margin: auto;
+	width: 100%;
+}
+div.carousel {
+	box-sizing: border-box;
+	width: 50%;
+}
+div.carousel-item img {
+	width: 100%;
+	height: 25rem;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	background-color: #111c;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Estilo contactenos */
+
+/* Mensaje Contactenos */
+
+div.span-contactos {
+	width: 100%;
+    height: 131px;
+	display: flex;
+	flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: #3254ff;
+}
+div span.spanContactenos {
+	margin-left: 200px;
+}
+
+footer {
+
+	background-image: linear-gradient(to top, rgba(90, 90, 90) 0%, rgba(30, 30, 30) 22%, rgba(5, 5, 5, 0) 30%);
+}
+
+footer div.format-logico {
+	display: flex;
+    justify-content: center;
+	flex-direction: row-reverse;
+}
+div.convertidor {
+	width: 50%;
+	display: grid;
+	justify-items: center;
+}
+
+div.cont-img {
+	margin-bottom: 25px;
+}
+div.img-gallery img {
+	width: 200px;
+    height: 145px;
+}
+
+
+/* Estilo contenedor mensaje-formulario */
+div.formulario {
+	margin-top: 12px;
+	width: 48%;
+    display: grid;
+    justify-items: center;
+}
+div.formulario h3 {
+	color: #5272F2;
+}
+div.cont-formulario {
+	width: 70%;
+	height: 94%;
+}
+div form.formulario {
+	display: grid;
+}
+
+/* Estilo del imput y Text Area*/
+label {
+	margin: 8px 0 0 0;
+}
+
+/* Estilo del imput y Text Area*/
+div.formulario input,
+.cont-button button {
+	width: 95%;
+    height: 30px;
+	padding: 10px;
+    border-radius: 15px;
+    border-color: #072541;
+}
+.txtArea {
+	padding-left: 10px;
+	width: 95%;
+	border-radius: 15px;
+	border-color: #072541;
+}
+
+/* Estilo del button */
+div.cont-button {
+	display: flex;
+	justify-content: center;
+}
+div.formulario input.button-enviar {
+	margin-top: 5px;
+	width: 50%;
+    height: 40px;
+    border-radius: 15px;
+    border-color: #072541;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/* Estilo contenedor contactos pie de pagina */
+div.contactos {
+	display: flex;
+	justify-content: space-between;
+
+}
+div.pie-logo {
+	padding: 0 0 3.5rem 2rem;
+	display: grid;
+	justify-items: center;
+}
+div.cont-infoSede {
+	padding: 0 2rem 1.2rem 0;
+    
+	display: grid;
+}
+div.titulo-infoSede {
+	display: flex;
+	justify-content: center;
+}
+div.titulo-infoSede h3 {
+	color: #fff;
+}
+div.ico-contacto {
+	display: flex;
+}
+a.mapa, a.tel, a.mail {
+	display: flex;
+    align-items: center;
+}
+div.ico-contacto h4 {
+	margin-left: 12px;
+	font-size: 1.3rem;
+	color: #eaeaff;
+}
+div.ico-contacto a img {
+	padding: 0 0 10px 0;
+	width: 30px;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 1050px) {
+	/* Menu cabecera */
+	h1 {
+		font-size: 1.8rem;
+	}
+	.nav-link {
+		font-size: .8rem;
+	}
+	div.menu_empresa img {
+		width: 62%;
+	}
+	.dropdown__check {
+		width: 7rem;
+	}
+	.dropdown__li {
+		padding: 0;
+	}
+	.nav-item-social a img {
+		width: 28px;
+	}
+
+	/* Gallery */
+
+	/* Seccion pie de pagina */
+	label {
+		font-size: .9rem;
+		color: #3254ff;
+	}
+	div.formulario input, .cont-button button {
+		width: 100%;
+	}
+	div.pie-logo img {
+		width: 24%;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.2rem;
+	}
+	div.ico-contacto h4 {
+		font-size: .9rem;
+	}
+	div.ico-contacto a img {
+		width: 30px;
+	}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 850px) {
+	/* Menu cabecera */
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
+	h3 {
+		font-size: 1rem;
+	}
+	.nav-link {
+		margin: 0 6px;
+		font-size: .65rem;
+	}
+	div.menu_empresa a.logo {
+		width: 20%;
+	}
+	div.menu_empresa img {
+		width: 68%;
+	}
+	.dropdown__content {
+		transform: translate(-62px, 0px);
+	}
+	.dropdown__check {
+		width: 5rem;
+		height: 2%;
+	}
+	.nav-item-social a img {
+		width: 22px;
+	}
+
+	/* Info Galeria */
+	div span.spanGallery,
+	div span.spanContactenos,
+	div hr {
+		margin-left: 100px;
+	}
+	div.carousel {
+		width: 95%;
+	}
+
+	/* Seccion pie de pagina */
+	div.formulario input.button-enviar {
+		padding: 0;
+    font-size: .85rem;
+	}
+	div.cont-formulario {
+		width: 100%;
+	}
+	div.ico-contacto h4 {
+		font-size: .75rem;
+	}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 700px) {
+	/* Menu cabecera */
+	div.menu_empresa img {
+		width: 70%;
+	}
+	h1 {
+		margin: 0;
+		font-size: 1.19rem;
+	}
+	h2 {
+		font-size: 1.1rem;
+	}
+	h3 {
+		font-size: .75rem;
+	}
+	div.ico-contacto h4  {
+		font-size: .47rem;
+	}
+	
+	.nav-link {
+		margin: 0 6px;
+		font-size: .65rem;
+	}
+	/* .dropdown__content {
+		transform: translate(-62px, 0px);
+	} */
+	.nav-item-social a img {
+		width: 22px;
+	}
+	.nav-item-social {
+		padding: 0 3px;
+	}
+	div div.tarjetaquieneSomos h3 {
+		padding: 6px 7.5%;
+	}
+	div.tarjetas h3 {
+		padding: 6px 11%;
+	}
+
+	/* Gallery */
+
+	/* Pie de pagina */
+	div.cont-infoSede {
+		padding: 0 0 1.2rem 0;
+	}
+	div.ico-contacto a img {
+		width: 28px;
+	}
+	div.pie-logo {
+		padding: 0 0 3.5rem 1rem;
+	}
+	
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 600px) {
+	/* menu cabecera */
+	#info {
+		display: flex;
+	}
+	h1 {
+		font-size: 1.8rem;
+	}
+	h2 {
+		font-size: 1.2rem;
+	}
+	div.navegacion {
+		height: 15rem;
+	}
+	div.logo-nombre {
+		width: auto;
+	}
+	div.menu_empresa img {
+		width: 90%;
+		margin: auto;
+	}
+	div.cont-menu {
+		display: grid;
+		justify-items: center;
+	}
+	div.menu_empresa {
+		width: 100%;
+		display: grid;
+		justify-items: center;
+	}
+	ul.menu {
+		margin: auto;
+		height: 6rem;
+	}
+	.nav-link {
+		font-size: 1.2rem;
+	}
+	.dropdown__check {
+		width: 6.5rem;
+		height: 3%;
+	}
+	.dropdown__content {
+		margin-top: 0.8rem;
+		width: 92%;
+		transform: translate(-112px, 0px);
+	}
+	ul.dropdown__sub a.dropdown__anchor{
+		font-size: 1.1rem;
+	}
+	div.red-social {
+		padding: 1.5rem;
+		width: auto;
+		height: 6rem;
+	}
+	.nav-item-social {
+		padding: 0 6px;
+	}
+	.nav-item-social a img {
+		width: 36px;
+	}
+
+	/* Cabeza de pagina */
+	div.carousel_dos {
+		display: grid;
+		justify-items: center;
+	}
+	div.carouselslide {
+		width: 99%;
+	}
+	div.nomEmpresa video {
+		height: 470px;
+	}
+	aside {
+		width: 100%;
+		height: 28rem;
+	}
+	div.tarjetas img {
+		padding: 5px 5px 5px 0px;
+		height: 144px;
+	}
+	div div.tarjetaquieneSomos h3 {
+		padding: 6px 0 0 35%;
+		font-size: 1rem;
+	}
+	div.tarjetas h3 {
+		padding: 6px 0 0 40%;
+		font-size: 1rem;
+	}
+
+	/* Gallery */
+	h3 {
+		font-size: 1rem;
+	}
+
+	/* Span hr imagen y contacto */
+	div span.spanGallery, div span.spanContactenos, div hr {
+		margin-left: 50px;
+	}
+
+	/* Formulario */
+	div.formulario {
+		width: 66%;
+	}
+	.txtArea {
+		width: 100%;
+	}
+
+	/* Pie de pagina */
+	footer {
+		background-image: linear-gradient(to top, rgba(90, 90, 90) 0%, rgba(30, 30, 30) 20%, rgba(5, 5, 5, 0) 42%);
+	}
+	div.contactos {
+		display: grid;
+		justify-content: center;
+	}
+	div.pie-logo {
+		padding: 3rem 0 2rem 0;
+	}
+	div.titulo-infoSede h3 {
+		font-size: 1.15rem;
+	}
+	div.ico-contacto h4 {
+		font-size: .75rem;
+	}
+
+}
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 400px) {
+	h1 {
+		font-size: 1.75rem;
+	}
+	.nav-link {
+		font-size: 1rem;
+	}
+	.dropdown__content {
+		transform: translate(-99px, 0px);
+	}
+	ul.dropdown__sub a.dropdown__anchor{
+		font-size: 1rem;
+	}
+}
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 340px) {
+	h1 {
+		font-size: 1.4rem;
+	}
+	.nav-link {
+		font-size: .86rem;
+	}
+}

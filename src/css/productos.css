@@ -1,0 +1,590 @@
+/* Estilo de la letra */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* General modifica todo el HTML*/
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', 'sans-serif';
+	font-weight: 400;
+	color: #000000;
+	scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	margin-bottom: 10px;
+    margin-top: 10px;
+	font-size: 2.5rem;
+	text-align: center;
+	color: #072541;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-size: 1.7rem;
+	text-align: justify;
+	color: #072541;
+}
+
+.restaurar {
+	clear: both;
+}
+
+.quienessomos,
+.productos,
+.servicios {
+	background: url(../../1_img/Fondo2.png);
+	border-top: solid #5272f2 10px;
+    border-bottom: solid #5272f2 15px;
+}
+
+div.contenido {
+	width: auto;
+	margin: auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+aside {
+	width: 35%;
+	display: flex;
+	justify-content: center;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/* Usar el 100% de la pantalla*/
+html,
+body,
+.fondoimg {
+	height: 100%;
+}
+
+
+/* Menu superior cabecera */
+
+/* Navegacion */
+.navegacion {
+	display: flex;
+    width: 100%;
+}
+
+nav {
+	margin-top: 15px;
+	border-top: 10px;
+}
+.cel{
+	width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* logo de empresa - navegacion */
+div.logo {
+    width: 25%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+div.logo img {
+	width: 90px;
+}
+span.nom-empresa h1 {
+	display: none;
+}
+
+/* Menu de navegacion */
+ul.menu {
+    width: 50%;
+	border-radius: 6px;
+	float: right;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+.nav-link {
+	display: flex;
+	margin-right: 30px;
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: #fff;
+
+}
+/* Elimina puntos o viñetas de las listas*/
+nav ul li {
+	list-style-type: none;
+}
+
+/* Iconos redes social */
+div.cont-social {
+	width: 25%;
+	display: flex;
+	justify-content: flex-start;
+}
+ul.menu-social {
+	display: flex;
+}
+.nav-item-social a{
+	margin-right: 10px;
+}
+.nav-item-social a img {
+	width: 35px;
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Seccion Cabecera */
+section.cabecera {
+	display: flex;
+	background: #072541;
+	border-top: solid #5272F2 15px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Contenido flotante de Quienes somos, Nuestrso roductos y Nuestros servicios */
+
+.textocontenido {
+	width: 60%;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Seccion Quienes somos */
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Seccion Nuestros Productos */
+
+
+div.listas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lista1 {
+	margin-right: 80px;
+}
+
+section.productos div.listas li {
+	font-size: 1.3rem;
+	color: #072541;
+    margin-top: 15px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Seccion Nuestros Servicios */
+
+section.servicios div.listas li {
+    font-size: 1.3rem;
+    color: #072541;
+    margin-top: 15px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Seccion Contactos */
+/* Estilo contenedor logico */
+footer {
+
+	background-image: linear-gradient(to top, rgba(30, 30, 30, 0.9) 0%, rgba(1, 1, 1, 0.8) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+footer div.format-logico {
+	display: flex;
+    justify-content: center;
+	flex-direction: row-reverse;
+}
+div.convertidor {
+	width: 100%;
+	display: grid;
+	justify-items: center;
+	background: #5272f2;
+}
+div.gallery {
+	display: flex;
+	flex-direction: column;
+}
+
+h3.titulo-gallery {
+	margin-bottom: 10px;
+	font-weight: 800;
+	color: #fff;
+	font-size: 1.5rem;
+}
+div.cont-img {
+	margin-bottom: 25px;
+}
+div.img-gallery img {
+	width: 100%;
+    height: 100px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/* Estilo contenedor contactos pie de pagina */
+div.contactos {
+	display: flex;
+	justify-content: space-evenly;
+
+}
+div.contactos h1 {
+	color: #5272F2;
+}
+div.pie-logo {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	width: 50%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.cont-infoSede {
+	width: 50%;
+    margin-bottom: 20px;
+	display: grid;
+	justify-content: center
+}
+div.titulo-infoSede {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+div.titulo-infoSede h3 {
+	
+	color: #5272F2;
+}
+div.ico-contacto {
+	display: flex;
+}
+div.ico-contacto img{
+	width: 35px;
+}
+a.mapa, a.tel, a.mail {
+	display: flex;
+    align-items: center;
+}
+div.ico-contacto h4 {
+	margin-left: 12px;
+	color: #fff;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 1110px) {
+
+	.nav-link {
+		font-size: 1rem;
+	}
+	h3 {
+		font-size: 1.4rem;
+	}
+	div.contactos h1 {
+		font-size: 2.5rem;
+	}
+	div.ico-contacto h4 {
+		font-size: 0.9rem;
+	}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 1050px) {
+
+	div.logo {
+		justify-content: center;
+	}
+	div.cont-social {
+		justify-content: center;
+	}
+	.nav-link {
+		font-size: 0.9rem;
+	}
+	.nav-item-social a img {
+		width: 30px;
+	}
+	div.contactos h1 {
+		font-size: 2.5rem;
+	}
+	div.ico-contacto h4 {
+		font-size: 0.9rem;
+	}
+	
+	
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 900px) {
+
+	ul.menu {
+		width: 52%;
+	}
+	div.contactos h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		margin: 0px;
+    	font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.2rem;
+	}
+	div.ico-contacto h4 {
+		font-size: 0.8rem;
+	}
+	p {
+		font-size: 1.15rem;
+	}
+	section.productos div.lista1 li {
+		font-size: 1.1rem;
+    	font-weight: 600;
+	}
+	section.productos div.lista2 li {
+		font-size: 1.1rem;
+    	font-weight: 600;
+	}
+	section.servicios div.listas li {
+		font-size: 1.1rem;
+    	font-weight: 600;
+	}
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 700px) {
+
+	div.contactos h1 {
+		font-size: 1.5rem;
+	}
+	h3 {
+		font-size: 1rem;
+	}
+	div.ico-contacto h4 {
+		font-size: 0.7rem;
+	}
+	div.logo img {
+		width: 75px;
+	}
+	.nav-link {
+		font-size: 0.8rem;
+		margin-right: 15px;
+	}
+	.nav-item-social a img {
+		width: 26px;
+	}
+	div.pie-logo {
+		justify-content: center;
+	}
+	div.pie-logo img {
+		width: 20%;
+	}
+	div.ico-contacto img{
+		width: 28px;
+	}
+	h2 {
+    	font-size: 1.2rem;
+	}
+	p {
+		font-size: 0.8rem;
+	}
+	section.productos div.lista1 li {
+		font-size: 0.8rem;
+    	font-weight: 600;
+	}
+	section.productos div.lista2 li {
+		font-size: 0.8rem;
+    	font-weight: 600;
+	}
+	aside {
+		width: 32%;
+		justify-content: flex-end;
+	}
+	.textocontenido {
+		width: 65%;
+	}
+	.lista1 {
+		margin-right: 32px;
+	}
+	div.img-gallery img {
+		height: 75px;
+	}
+	section.servicios div.listas li {
+		font-size: 0.8rem;
+    	font-weight: 600;
+	}
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 600px) {
+
+	h2 {
+    	font-size: 1rem;
+	}
+	p {
+		font-size: 0.74rem;
+	}
+	section.productos div.lista1 li {
+		font-size: 0.63rem;
+    	font-weight: 600;
+	}
+	section.productos div.lista2 li {
+		font-size: 0.63rem;
+    	font-weight: 600;
+	}
+	div.img-gallery img {
+		height: 55px;
+	}
+	section.servicios div.listas li {
+		font-size: 0.63rem;
+    	font-weight: 600;
+	}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 500px) {
+
+	.cel {
+		width: 100%;
+		height: 250px;
+		display: grid;
+	}
+	div.logo {
+		width: 100%;
+		justify-content: space-evenly;
+	}
+	span.nom-empresa h1 {
+		display: flex;
+		color: #fff;
+    	font-size: 1.8rem;
+	}
+	ul.menu {
+		margin-bottom: 15px;
+		width: 100%;
+		display: grid;
+    	justify-items: center;
+	}
+	div.cont-social {
+		width: 100%;
+	}
+	.nav-link {
+		font-size: 1rem;
+		margin-top: 5px;
+	}
+	.nav-item-social a img {
+		width: 30px;
+	}
+	.nav-item-social a {
+		margin-right: 15px;
+	}
+	div.contactos {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	div.pie-logo {
+		margin-bottom: 10px;
+		width: 100%;
+		justify-content: center;
+	}
+	div.contactos h1 {
+		font-size: 1.59rem;
+	}
+	h3 {
+		font-size: 1.3rem;
+		margin-bottom: 10px;
+	}
+	div.ico-contacto {
+		 display: flex;
+	}
+	div.ico-contacto img {
+		width: 35px;
+	}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 450px) {
+
+	div.logo {
+		width: 100%;
+	}
+	h1 {
+		font-size: 1.6rem;
+	}
+	div.logo img {
+		width: 75px;
+	}
+	nav.cel {
+		display: grid;
+		justify-items: center;
+		align-content: space-evenly;
+	}
+	div.nomEmpresa h1 {
+		font-size: 1.5rem;
+	}
+	div.ico-contacto {
+		margin-top: 15px;
+	}
+	a.nav-link {
+		margin: 0px;
+	}
+	li.nav-item {
+		margin-bottom: 5px;
+	}
+	ul.menu {
+		width: 100%;
+		display: grid;
+	}
+	aside {
+		width: 26%;
+	}
+	.textocontenido {
+		width: 70%;
+	}
+	p {
+		text-align: left;
+	}
+	
+}	
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 370px) {
+	h1 {
+		font-size: 1.1rem;
+	}
+	div.logo img {
+		width: 65px;
+		margin-right: 20px;
+	}
+}
