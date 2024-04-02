@@ -8,117 +8,93 @@
 	padding: 0px;
 	font-family: 'Open Sans', 'sans-serif';
 	font-weight: 400;
-	color: #000000;
+	color: #333;
 	scroll-behavior: smooth;
 }
 
 h1 {
-	font-size: 3rem;
+	margin: 0 0 .5rem 0;
+	font-size: 2.5rem;
+	color: #eaeaff;
+	font-weight: 500;
 }
-
 h2 {
-	margin-bottom: 10px;
-    margin-top: 10px;
 	font-size: 2.5rem;
 	text-align: center;
-	color: #072541;
+	font-weight: 600;
+    color: #eaeaff;
+}
+h2.titulo-info {
+	color: #333e;
+}
+li {
+	font-size: 1.05rem;
+	color: #333e;
 }
 
-h3 {
-	font-size: 1.5rem;
-}
-
-p {
-	font-size: 1.7rem;
-	text-align: justify;
-	color: #072541;
-}
-
-.restaurar {
-	clear: both;
-}
-
-.quienessomos,
-.productos,
-.servicios {
-	background: url(../../1_img/Fondo2.png);
-	border-top: solid #5272f2 10px;
-    border-bottom: solid #5272f2 15px;
-}
-
-div.contenido {
-	width: auto;
+div.logo, ul.menu, ul.menu-social {
 	margin: auto;
 	display: flex;
-	justify-content: flex-end;
 	align-items: center;
 }
 
-aside {
-	width: 35%;
-	display: flex;
-	justify-content: center;
+img {
+	vertical-align: middle;
 }
 
-
-/*-------------------------------------------------------------------------------------------------------------------*/
-/* Usar el 100% de la pantalla*/
 html,
-body,
-.fondoimg {
+body{
 	height: 100%;
 }
 
+/*-------------------------------------------------------------------------------------------------------------------*/
+/* Seccion Cabecera */
+/* Usar el 100% de la pantalla*/
 
 /* Menu superior cabecera */
+section.cabecera {
+	background: #3254ff;
+	border-top: 15px solid #eaeaff;
+}
 
 /* Navegacion */
-.navegacion {
+nav.cel {
+	padding: 11px 0;
 	display: flex;
-    width: 100%;
-}
-
-nav {
-	margin-top: 15px;
-	border-top: 10px;
-}
-.cel{
-	width: 100%;
-    display: flex;
     align-items: center;
 }
 
 /* logo de empresa - navegacion */
-div.logo {
-    width: 25%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+section div.logo {
+	width: 50%;
+}
+div.logo a {
+    margin: 1px 10px 1px 6.5%;
+}
+img.img-logo {
+	width: 85%;
 }
 
-div.logo img {
-	width: 90px;
-}
-span.nom-empresa h1 {
-	display: none;
-}
+/* Menu de navegacion y redes*/
 
-/* Menu de navegacion */
-ul.menu {
-    width: 50%;
-	border-radius: 6px;
-	float: right;
-	display: flex;
-	align-items: center;
-    justify-content: center;
+section ul.menu {
+	width: 34%;
+	justify-content: center;
 }
 .nav-link {
-	display: flex;
-	margin-right: 30px;
-	font-size: 1.1rem;
-	font-weight: 700;
-	color: #fff;
+    margin: 0 10px;
+	padding: 0;
+	font-size: 1rem;
+    font-weight: 700;
+	text-decoration: none;
+    color: #eaeaff;
+}
 
+section div.cont-social {
+	width: 16%;
+}
+section ul.menu-social {
+	justify-content: center;
 }
 /* Elimina puntos o viñetas de las listas*/
 nav ul li {
@@ -126,157 +102,132 @@ nav ul li {
 }
 
 /* Iconos redes social */
-div.cont-social {
-	width: 25%;
-	display: flex;
-	justify-content: flex-start;
-}
-ul.menu-social {
-	display: flex;
-}
-.nav-item-social a{
-	margin-right: 10px;
-}
-.nav-item-social a img {
+.menu-social a img {
 	width: 35px;
 }
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-/* Seccion Cabecera */
-section.cabecera {
-	display: flex;
-	background: #072541;
-	border-top: solid #5272F2 15px;
+.nav-item-social {
+	margin: 0 5px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-/* Contenido flotante de Quienes somos, Nuestrso roductos y Nuestros servicios */
-
-.textocontenido {
-	width: 60%;
+/* Seccion Informacion */
+section.informacion {
+	background: #eaeaff;
 }
 
-/*-------------------------------------------------------------------------------------------------------------------*/
+div.contenido {
+	display: grid;
+    justify-items: center;
+}
 
-/* Seccion Quienes somos */
+/* Contenido Texto */
+div.textocontenido  {
+	padding: 20px;
+}
 
-
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-/* Seccion Nuestros Productos */
-
+.textocontenido p {
+	padding: 0 20%;
+	font-size: 1.2rem;
+	text-align: justify;
+}
 
 div.listas {
+	padding: 0 20%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.lista1 {
-	margin-right: 80px;
-}
-
-section.productos div.listas li {
-	font-size: 1.3rem;
-	color: #072541;
-    margin-top: 15px;
-}
-
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-/* Seccion Nuestros Servicios */
-
-section.servicios div.listas li {
-    font-size: 1.3rem;
-    color: #072541;
-    margin-top: 15px;
-}
-
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-/* Seccion Contactos */
-/* Estilo contenedor logico */
-footer {
-
-	background-image: linear-gradient(to top, rgba(30, 30, 30, 0.9) 0%, rgba(1, 1, 1, 0.8) 70%, rgba(0, 0, 0, 0) 100%);
-}
-
-footer div.format-logico {
-	display: flex;
-    justify-content: center;
-	flex-direction: row-reverse;
-}
-div.convertidor {
-	width: 100%;
-	display: grid;
-	justify-items: center;
-	background: #5272f2;
-}
-div.gallery {
-	display: flex;
-	flex-direction: column;
-}
-
-h3.titulo-gallery {
-	margin-bottom: 10px;
-	font-weight: 800;
-	color: #fff;
-	font-size: 1.5rem;
-}
-div.cont-img {
-	margin-bottom: 25px;
-}
-div.img-gallery img {
-	width: 100%;
-    height: 100px;
-}
-
-
-/*-------------------------------------------------------------------------------------------------------------------*/
-/* Estilo contenedor contactos pie de pagina */
-div.contactos {
-	display: flex;
-	justify-content: space-evenly;
-
-}
-div.contactos h1 {
-	color: #5272F2;
-}
-div.pie-logo {
-	margin-top: 20px;
-	margin-bottom: 50px;
-	width: 50%;
-	display: flex;
-    flex-direction: column;
     align-items: center;
 }
-div.cont-infoSede {
-	width: 50%;
-    margin-bottom: 20px;
+section.productos div.listas {
+	justify-content: center;
+}
+div.lista1 {
+	margin-right: 20px;
+}
+div.lista2 {
+	margin-left: 20px;
+}
+
+ul.servicio {
+	margin-left: .5rem;
+}
+ul.servicio-list {
+	margin: 1rem 0 0 1rem;
+}
+ul.servicio li {
+	font-weight: 700;
+}
+
+/* Contenido Galeria Carousel */
+.galeria {
+	margin-bottom: 1.5rem;
+	width: 100%;
+}
+.contenidoGaleria {
 	display: grid;
-	justify-content: center
+	justify-items: center;
+}
+.slide {
+	box-sizing: border-box;
+    width: 40%;
+}
+.carousel-item img {
+	width: 100%;
+	height: 16rem;
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/* Seccion Contactos */
+footer {
+
+	background-image: linear-gradient(to top, rgba(90, 90, 90) 0%, rgba(30, 30, 30) 45%, rgba(5, 5, 5, 0) 70%);
+}
+
+div.span-contactos {
+    width: 100%;
+    height: 131px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: #3254ff;
+}
+div span.spanContactenos {
+    margin-left: 200px;
+}
+
+div hr {
+    margin-left: 200px;
+    margin-top: 15px;
+    height: 3px;
+    width: 74%;
+    background-color: #eaeaff;
+}
+/* Estilo contenedor contactos pie de pagina */
+div.contactos {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+
+}
+div.pie-logo {
+	padding: 0 0 3.5rem 2rem;
+	display: grid;
+	justify-items: center;
+}
+div.cont-infoSede {
+	padding: 0 2rem 1.2rem 0;
+    
+	display: grid;
 }
 div.titulo-infoSede {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 div.titulo-infoSede h3 {
-	
-	color: #5272F2;
+	color: #fff;
 }
 div.ico-contacto {
 	display: flex;
-}
-div.ico-contacto img{
-	width: 35px;
 }
 a.mapa, a.tel, a.mail {
 	display: flex;
@@ -284,91 +235,120 @@ a.mapa, a.tel, a.mail {
 }
 div.ico-contacto h4 {
 	margin-left: 12px;
-	color: #fff;
+	font-size: 1.3rem;
+	color: #eaeaff;
 }
-
-
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-/* Adaptacion a dispositivos moviles ancho */
-@media screen and (max-width: 1110px) {
-
-	.nav-link {
-		font-size: 1rem;
-	}
-	h3 {
-		font-size: 1.4rem;
-	}
-	div.contactos h1 {
-		font-size: 2.5rem;
-	}
-	div.ico-contacto h4 {
-		font-size: 0.9rem;
-	}
+div.ico-contacto a img {
+	padding: 0 0 10px 0;
+	width: 30px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------*/
-
 /* Adaptacion a dispositivos moviles ancho */
-@media screen and (max-width: 1050px) {
-
-	div.logo {
-		justify-content: center;
-	}
-	div.cont-social {
-		justify-content: center;
+@media screen and (max-width: 1070px) {
+	/* Menu cabecera */
+	h1 {
+		font-size: 1.8rem;
 	}
 	.nav-link {
-		font-size: 0.9rem;
+		font-size: .8rem;
+	}
+	section div.logo {
+		width: 48%;
+	}
+	div.logo a {
+		margin: 1px 10px 1px 7%;
+	}
+	img.img-logo {
+		width: 75%;
+	}
+	section ul.menu {
+		width: 36%;
+	}
+	.dropdown__check {
+		width: 7rem;
+	}
+	.dropdown__li {
+		padding: 0;
 	}
 	.nav-item-social a img {
-		width: 30px;
+		width: 28px;
 	}
-	div.contactos h1 {
-		font-size: 2.5rem;
-	}
-	div.ico-contacto h4 {
-		font-size: 0.9rem;
-	}
-	
-	
-}
 
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-/* Adaptacion a dispositivos moviles ancho */
-@media screen and (max-width: 900px) {
-
-	ul.menu {
-		width: 52%;
+	/* Info Gallery */
+	.slide {
+		width: 45%;
 	}
-	div.contactos h1 {
-		font-size: 2rem;
+
+	/* Seccion pie de pagina */
+	label {
+		font-size: .9rem;
+		color: #3254ff;
+	}
+	div.formulario input, .cont-button button {
+		width: 100%;
+	}
+	div.pie-logo img {
+		width: 24%;
 	}
 	h2 {
-		margin: 0px;
-    	font-size: 2rem;
+		font-size: 2rem;
 	}
 	h3 {
 		font-size: 1.2rem;
 	}
 	div.ico-contacto h4 {
-		font-size: 0.8rem;
+		font-size: .9rem;
 	}
-	p {
-		font-size: 1.15rem;
+	div.ico-contacto a img {
+		width: 30px;
 	}
-	section.productos div.lista1 li {
-		font-size: 1.1rem;
-    	font-weight: 600;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 850px) {
+	/* Menu cabecera */
+	h1 {
+		font-size: 1.3rem;
 	}
-	section.productos div.lista2 li {
-		font-size: 1.1rem;
-    	font-weight: 600;
+	h2 {
+		font-size: 1.5rem;
 	}
-	section.servicios div.listas li {
-		font-size: 1.1rem;
-    	font-weight: 600;
+	h3 {
+		font-size: 1rem;
+	}
+	.nav-link {
+		margin: 0 6px;
+		font-size: .65rem;
+	}
+	div.logo a {
+		margin: 1px -35px 1px 7.5%;
+	}
+	div.menu_empresa a.logo {
+		width: 20%;
+	}
+	img.img-logo {
+		width: 50%;
+	}
+	.nav-item-social a img {
+		width: 22px;
+	}
+
+	/* Info Galeria */
+	div span.spanGallery,
+	div span.spanContactenos,
+	div hr {
+		margin-left: 100px;
+	}
+
+	/* Seccion pie de pagina */
+	footer {
+		background-image: linear-gradient(to top, rgba(90, 90, 90) 0%, rgba(30, 30, 30) 42%, rgba(5, 5, 5, 0) 70%);
+	}
+	div.ico-contacto h4 {
+		font-size: .75rem;
 	}
 
 }
@@ -377,214 +357,189 @@ div.ico-contacto h4 {
 
 /* Adaptacion a dispositivos moviles ancho */
 @media screen and (max-width: 700px) {
-
-	div.contactos h1 {
-		font-size: 1.5rem;
-	}
-	h3 {
-		font-size: 1rem;
-	}
-	div.ico-contacto h4 {
-		font-size: 0.7rem;
-	}
-	div.logo img {
-		width: 75px;
-	}
-	.nav-link {
-		font-size: 0.8rem;
-		margin-right: 15px;
-	}
-	.nav-item-social a img {
-		width: 26px;
-	}
-	div.pie-logo {
-		justify-content: center;
-	}
-	div.pie-logo img {
-		width: 20%;
-	}
-	div.ico-contacto img{
-		width: 28px;
-	}
-	h2 {
-    	font-size: 1.2rem;
-	}
-	p {
-		font-size: 0.8rem;
-	}
-	section.productos div.lista1 li {
-		font-size: 0.8rem;
-    	font-weight: 600;
-	}
-	section.productos div.lista2 li {
-		font-size: 0.8rem;
-    	font-weight: 600;
-	}
-	aside {
-		width: 32%;
-		justify-content: flex-end;
-	}
-	.textocontenido {
-		width: 65%;
-	}
-	.lista1 {
-		margin-right: 32px;
-	}
-	div.img-gallery img {
-		height: 75px;
-	}
-	section.servicios div.listas li {
-		font-size: 0.8rem;
-    	font-weight: 600;
-	}
-
-}
-
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-/* Adaptacion a dispositivos moviles ancho */
-@media screen and (max-width: 600px) {
-
-	h2 {
-    	font-size: 1rem;
-	}
-	p {
-		font-size: 0.74rem;
-	}
-	section.productos div.lista1 li {
-		font-size: 0.63rem;
-    	font-weight: 600;
-	}
-	section.productos div.lista2 li {
-		font-size: 0.63rem;
-    	font-weight: 600;
-	}
-	div.img-gallery img {
-		height: 55px;
-	}
-	section.servicios div.listas li {
-		font-size: 0.63rem;
-    	font-weight: 600;
-	}
-}
-
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-/* Adaptacion a dispositivos moviles ancho */
-@media screen and (max-width: 500px) {
-
-	.cel {
-		width: 100%;
-		height: 250px;
-		display: grid;
-	}
-	div.logo {
-		width: 100%;
-		justify-content: space-evenly;
-	}
-	span.nom-empresa h1 {
-		display: flex;
-		color: #fff;
-    	font-size: 1.8rem;
-	}
-	ul.menu {
-		margin-bottom: 15px;
-		width: 100%;
-		display: grid;
-    	justify-items: center;
-	}
-	div.cont-social {
-		width: 100%;
-	}
-	.nav-link {
-		font-size: 1rem;
-		margin-top: 5px;
-	}
-	.nav-item-social a img {
-		width: 30px;
-	}
-	.nav-item-social a {
-		margin-right: 15px;
-	}
-	div.contactos {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	div.pie-logo {
-		margin-bottom: 10px;
-		width: 100%;
-		justify-content: center;
-	}
-	div.contactos h1 {
-		font-size: 1.59rem;
-	}
-	h3 {
-		font-size: 1.3rem;
-		margin-bottom: 10px;
-	}
-	div.ico-contacto {
-		 display: flex;
-	}
-	div.ico-contacto img {
-		width: 35px;
-	}
-}
-
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-/* Adaptacion a dispositivos moviles ancho */
-@media screen and (max-width: 450px) {
-
-	div.logo {
-		width: 100%;
-	}
-	h1 {
-		font-size: 1.6rem;
-	}
-	div.logo img {
-		width: 75px;
-	}
-	nav.cel {
-		display: grid;
-		justify-items: center;
-		align-content: space-evenly;
-	}
-	div.nomEmpresa h1 {
-		font-size: 1.5rem;
-	}
-	div.ico-contacto {
-		margin-top: 15px;
-	}
-	a.nav-link {
-		margin: 0px;
-	}
-	li.nav-item {
-		margin-bottom: 5px;
-	}
-	ul.menu {
-		width: 100%;
-		display: grid;
-	}
-	aside {
-		width: 26%;
-	}
-	.textocontenido {
+	/* Menu cabecera */
+	div.menu_empresa img {
 		width: 70%;
 	}
-	p {
-		text-align: left;
-	}
-	
-}	
-
-/* Adaptacion a dispositivos moviles ancho */
-@media screen and (max-width: 370px) {
 	h1 {
+		margin: 0;
+		font-size: 1.19rem;
+	}
+	h2 {
 		font-size: 1.1rem;
 	}
-	div.logo img {
-		width: 65px;
-		margin-right: 20px;
+	h3 {
+		font-size: .75rem;
+	}
+	div.ico-contacto h4  {
+		font-size: .47rem;
+	}
+	
+	.nav-link {
+		margin: 0 6px;
+		font-size: .65rem;
+	}
+	section div.logo {
+		width: 46%;
+	}
+	div.logo a {
+		margin: 1px -44px 1px 8%;
+	}
+	img.img-logo {
+		width: 46%;
+	}
+	section ul.menu {
+		width: 40%;
+	}
+	.nav-item-social {
+		padding: 0;
+	}
+
+	/* Texto */
+	.textocontenido p {
+		padding: 0 10%;
+	}
+	div.listas {
+		padding: 0 0 0 10%;
+	}
+
+	/* Pie de pagina */
+	div.cont-infoSede {
+		padding: 0 1rem 1.2rem 0;
+	}
+	div.ico-contacto a img {
+		width: 28px;
+	}
+	div.pie-logo {
+		padding: 0 0 3.5rem 1rem;
+	}
+	
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 570px) {
+	/* menu cabecera */
+	h1 {
+		font-size: 1.8rem;
+	}
+	h2 {
+		font-size: 1.2rem;
+	}
+	nav.cel {
+		padding: 11px 0;
+		display: grid;
+		justify-items: center;
+	}
+	section div.logo {
+		width: 100%;
+		justify-content: center;
+	}div.logo a {
+		margin: 0 -20px 1px 0;
+	}
+	img.img-logo {
+		width: 68%;
+	}
+	section ul.menu {
+		width: 100%;
+		height: 6rem;
+	}
+	.nav-link {
+		font-size: 1.1rem;
+	}
+	.nav-item-social {
+		padding: 0 6px;
+	}
+	.nav-item-social a img {
+		width: 36px;
+	}
+
+	/* Cabeza de pagina */
+	div.carouselslide {
+		width: 99%;
+	}
+
+	/* Contenido Texto */
+	.textocontenido p {
+		padding: 0 1%;
+		font-size: 1rem;
+	}
+	div.listas {
+		padding: 0 0 0 1.5rem;
+	}
+	ul.servicio li {
+		font-size: .885rem;
+	}
+	
+	li {
+		font-size: .86rem;
+	}
+
+	/* Gallery */
+	.slide {
+		width: 80%;
+	}
+
+	/* Span hr imagen y contacto */
+	div span.spanGallery, div span.spanContactenos, div hr {
+		margin-left: 50px;
+	}
+
+	/* Pie de pagina */
+	footer {
+		background-image: linear-gradient(to top, rgba(90, 90, 90) 0%, rgba(30, 30, 30) 30%, rgba(5, 5, 5, 0) 75%);
+	}
+	div.contactos {
+		margin: 0;
+		display: grid;
+		justify-content: center;
+	}
+	div.pie-logo {
+		padding: 3rem 0 2rem 0;
+	}
+	div.titulo-infoSede h3 {
+		font-size: 1.15rem;
+	}
+	div.ico-contacto h4 {
+		font-size: .75rem;
+	}
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 400px) {
+	div.logo a {
+		margin: 2px -30px 1px 5px;
+	}
+	img.img-logo {
+		width: 63%;
+	}
+	h1 {
+		font-size: 1.75rem;
+	}
+	.nav-link {
+		font-size: 1rem;
+	}
+	div.listas {
+		padding: 0 0 0 1.1rem;
+	}
+	li {
+		font-size: .73rem;
+	}
+}
+
+/* Adaptacion a dispositivos moviles ancho */
+@media screen and (max-width: 350px) {
+	h1 {
+		font-size: 1.4rem;
+	}
+	.nav-link {
+		font-size: .86rem;
+	}
+	li {
+		font-size: .7rem;
 	}
 }

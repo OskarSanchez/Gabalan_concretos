@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <title>GABALAN CONCRETOS S.A.S</title>
 	<link rel="shortcut icon" href="../1_img/logo.ico">
 	<link rel="stylesheet" href="../src/css/productos.css">
@@ -14,9 +25,9 @@
             <nav class="cel" id="cel">
                 <div class="logo">
                     <a href="#cabecera">
-                        <img src="../1_img/logo.ico" alt="Logo Gabalan Concretos">
+                        <img class="img-logo" src="../1_img/logo.ico" alt="Logo Gabalan Concretos">
                     </a>
-					<span class="nom-empresa"><h1>Gabalan Concretos</h1></span>
+					<h1 class="nom-empresa">Gabalan Concretos</h1>
                 </div>
                 <ul class="menu">
                     <li class="nav-item">
@@ -27,10 +38,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/index/producto.html"> PRODUCTOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto"> CONTACTO</a>
-                    </li>
                 </ul>
                 <div class="cont-social">
                     <ul class="menu-social">
@@ -56,53 +63,82 @@
 	</section>
 
     <!-- Seccion Nuestros Servicios -->
-	<section class="servicios" id="servicios">
+	<section class="informacion" id="servicios">
 		<div class="contenido">
 			<div class="izquierdo textocontenido">
-				<h2>NUESTROS SERVICIOS</h2><br>
+				<h2 class="titulo-info">NUESTROS SERVICIOS</h2><br>
 				<P>El servicio es una de nuestras mayores fortalezas debido a que aparte de
 					ofrecer productos, ofrecemos soluciones integrales a las diversas
 					necesidades de nuestros clientes para sus diferentes proyectos:</P>
 				<div class="listas">
-					<ul>
+					<ul class="servicio">
 						<li>Servicio para restauración de estructuras</li>
 						<li>Servicios de obra civil para vías y edificaciones</li>
-						<li>Servicios de alquiler de maquinas y/o herramientas para colocación de
-							concreto (Bombas y autobombas de concreto, reglas vibratorias,
-							vibradores, helicópteros, formaletas, andamios y mezcladoras de
-							concreto.)</li>
+						<li>Servicios de alquiler de maquinas y/o herramientas para colocación de concreto:</li>
+							<ul class="servicio-list">
+								<li><strong>Bombas y autobombas de concreto</strong></li>
+								<li><strong>reglas vibratorias</strong></li>
+								<li><strong>vibradores</strong></li>
+								<li><strong>helicópteros</strong></li>
+								<li><strong>formaletas</strong></li>
+								<li><strong>andamios y mezcladoras de concreto</strong></li>
+							</ul>
 					</ul>
 				</div>
 			</div>
-            <aside>
-				<div class="format-logico">
-					<div class="convertidor">
-						<h3 class="titulo-gallery">Galeria</h3>
-						<div class="cont-img">
-							<div class="gallery">
-								<div class="img-gallery"><img src="/1_img/img1.webp" alt=""></div>
-								<div class="img-gallery"><img src="/1_img/img2.jpg" alt=""></div>
-								<div class="img-gallery"><img src="/1_img/img3.jpg" alt=""></div>
+            <div class="galeria">
+				<div class="contenidoGaleria">
+					<!-- <h3 class="txt_gallery">Servicios realizados a nuestros clientes</h3> -->
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="../1_img/img1.jpg" class="" alt="img Gabalan Concretos">
 							</div>
-							<div class="gallery">
-								<div class="img-gallery"><img src="/1_img/img4.jpg" alt=""></div>
-								<div class="img-gallery"><img src="/1_img/img5.jpg" alt=""></div>
-								<div class="img-gallery"><img src="/1_img/img6.jpg" alt=""></div>
+							<div class="carousel-item">
+								<img src="../1_img/img1.webp" class="" alt="img Gabalan Concretos">
 							</div>
+							<div class="carousel-item">
+								<img src="../1_img/img2.jpg" class="" alt="img Gabalan Concretos">
+							</div>
+							<div class="carousel-item">
+								<img src="../1_img/img3.jpg" class="" alt="img Gabalan Concretos">
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+								data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+								data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
 						</div>
 					</div>
 				</div>
-			</aside>
+			</div>
 		</div>
 	</section>
 
     <!-- Seccion Contactenos -->
     <footer id="contacto" class="contacto">
+		<div class="span-contactos">
+            <span class="spanContactenos">
+                <h2>CONTACTENOS</h2>
+            </span>
+            <hr noshade="noshade" size="3" />
+        </div>
 		<div class="formatoLogico">
 			<div class="contactos">
 				<div class="pie-logo">
 					<img src="/1_img/logo.ico" alt="Logo empresa">
-					<span><h1>Gabalan Concretos</h1></span>
+					<h2>Gabalan Concretos</h2>
 				</div>
 				<div class="cont-infoSede">
 					<div class="titulo-infoSede"><h3>Sede Administrativa</h3></div>

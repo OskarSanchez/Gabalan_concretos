@@ -585,9 +585,6 @@ div.ico-contacto a img {
 		margin: 0 6px;
 		font-size: .65rem;
 	}
-	/* .dropdown__content {
-		transform: translate(-62px, 0px);
-	} */
 	.nav-item-social a img {
 		width: 22px;
 	}
@@ -605,7 +602,7 @@ div.ico-contacto a img {
 
 	/* Pie de pagina */
 	div.cont-infoSede {
-		padding: 0 0 1.2rem 0;
+		padding: 0 1rem 1.2rem 0;
 	}
 	div.ico-contacto a img {
 		width: 28px;
@@ -657,7 +654,7 @@ div.ico-contacto a img {
 		font-size: 1.2rem;
 	}
 	.dropdown__check {
-		width: 6.5rem;
+		width: 9rem;
 		height: 3%;
 	}
 	.dropdown__content {
